@@ -25,3 +25,5 @@ run
 forge*changelog.txt
 
 # Images Reserved by UFO TEAM
+src/main/resources/assets/newores/textures/block/*.png
+src/main/resources/assets/newores/textures/item/*.png
