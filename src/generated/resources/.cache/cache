@@ -1,0 +1,8 @@
+c389529c1f5d800624b5f9b4213920063e3d6737 assets/newores/blockstates/platinium_ore.json
+7c21a3c7c705879fb9a36de47134b1713cd1fdb4 assets/newores/lang/en_us.json
+71ab8c6195e3c34a72273c324390fe9f90c41165 assets/newores/models/block/platinium_ore.json
+f0b5e00adf2d292d7b21cb38e360eb061ab4d8e4 assets/newores/models/item/platinium_ore.json
+cb27fdd0f123b58bda736b177233e59dcde5273a data/forge/tags/blocks/ores.json
+cb27fdd0f123b58bda736b177233e59dcde5273a data/forge/tags/items/ores.json
+cb27fdd0f123b58bda736b177233e59dcde5273a data/minecraft/tags/blocks/mineable/pickaxe.json
+cb27fdd0f123b58bda736b177233e59dcde5273a data/minecraft/tags/blocks/needs_iron_tool.json
