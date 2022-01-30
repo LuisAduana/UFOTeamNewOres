@@ -24,6 +24,9 @@ run
 # Files from Forge MDK
 forge*changelog.txt
 
+# Generated files
+src/generated/*
+
 # Images Reserved by UFO TEAM
 src/main/resources/assets/newores/textures/block/*.png
 src/main/resources/assets/newores/textures/item/*.png
