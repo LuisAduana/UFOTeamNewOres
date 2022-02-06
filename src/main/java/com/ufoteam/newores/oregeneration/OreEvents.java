@@ -14,7 +14,7 @@ public class OreEvents {
         switch (event.getCategory()) {
             case NETHER, THEEND -> {}
             default -> {
-                event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, OreGeneration.ORE_PLATINIUM_PLACEMENT);
+                event.getGeneration().addFeature(GenerationStep.Decoration.UNDERGROUND_ORES, OreGeneration.ORE_PLATINUM_PLACEMENT);
             }
         }
     }

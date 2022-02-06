@@ -14,7 +14,7 @@ public class NewOresBlockStates extends BlockStateProvider {
 
     @Override
     protected void registerStatesAndModels() {
-        simpleBlock(NewOresBlocks.PLATINIUM_ORE.get());
+        simpleBlock(NewOresBlocks.PLATINUM_ORE.get());
     }
 
 }

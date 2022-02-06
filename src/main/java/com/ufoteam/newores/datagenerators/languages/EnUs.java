@@ -14,7 +14,7 @@ public class EnUs extends LanguageProvider {
     @Override
     protected void addTranslations() {
         add("itemGroup." + GlobalUtils.MODID, "NewOres Mod");
-        add(NewOresBlocks.PLATINIUM_ORE.get(), "Platinium Ore");
+        add(NewOresBlocks.PLATINUM_ORE.get(), "Platinum Ore");
     }
 
 }

@@ -14,16 +14,16 @@ import java.util.List;
 
 public class OreGeneration {
 
-    public static final List<OreConfiguration.TargetBlockState> ORE_PLATINIUM_TARGET_LIST = List.of(
-            OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, NewOresBlocks.PLATINIUM_ORE.get().defaultBlockState()),
-            OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, NewOresBlocks.PLATINIUM_ORE.get().defaultBlockState())
+    public static final List<OreConfiguration.TargetBlockState> ORE_PLATINUM_TARGET_LIST = List.of(
+            OreConfiguration.target(OreFeatures.STONE_ORE_REPLACEABLES, NewOresBlocks.PLATINUM_ORE.get().defaultBlockState()),
+            OreConfiguration.target(OreFeatures.DEEPSLATE_ORE_REPLACEABLES, NewOresBlocks.PLATINUM_ORE.get().defaultBlockState())
     );
 
-    public static final ConfiguredFeature<?, ?> ORE_PLATINIUM = FeatureUtils.register(
-            "ore_platinium", Feature.ORE.configured(new OreConfiguration(ORE_PLATINIUM_TARGET_LIST, 13)));
+    public static final ConfiguredFeature<?, ?> ORE_PLATINUM = FeatureUtils.register(
+            "ore_platinum", Feature.ORE.configured(new OreConfiguration(ORE_PLATINUM_TARGET_LIST, 13)));
 
-    public static final PlacedFeature ORE_PLATINIUM_PLACEMENT = PlacementUtils.register(
-            "ore_platinium_placement", ORE_PLATINIUM.placed(
+    public static final PlacedFeature ORE_PLATINUM_PLACEMENT = PlacementUtils.register(
+            "ore_platinum_placement", ORE_PLATINUM.placed(
                     commonOrePlacement(7,
                             HeightRangePlacement.triangle(VerticalAnchor.absolute(-80), VerticalAnchor.absolute(80)))));
 

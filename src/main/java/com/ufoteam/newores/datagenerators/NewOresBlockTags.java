@@ -17,11 +17,11 @@ public class NewOresBlockTags extends BlockTagsProvider {
     @Override
     protected void addTags() {
         tag(BlockTags.MINEABLE_WITH_PICKAXE)
-                .add(NewOresBlocks.PLATINIUM_ORE.get());
+                .add(NewOresBlocks.PLATINUM_ORE.get());
         tag(BlockTags.NEEDS_IRON_TOOL)
-                .add(NewOresBlocks.PLATINIUM_ORE.get());
+                .add(NewOresBlocks.PLATINUM_ORE.get());
         tag(Tags.Blocks.ORES)
-                .add(NewOresBlocks.PLATINIUM_ORE.get());
+                .add(NewOresBlocks.PLATINUM_ORE.get());
     }
 
     @Override

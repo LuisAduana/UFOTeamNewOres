@@ -17,7 +17,7 @@ public class NewOresItemTags extends ItemTagsProvider {
     @Override
     protected void addTags() {
         tag(Tags.Items.ORES)
-                .add(NewOresItems.PLATINIUM_ORE_ITEM.get());
+                .add(NewOresItems.PLATINUM_ORE_ITEM.get());
     }
 
     @Override

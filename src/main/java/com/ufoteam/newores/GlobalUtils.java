@@ -10,7 +10,7 @@ public class GlobalUtils {
     public static final CreativeModeTab NEWORES_TAB = new CreativeModeTab(GlobalUtils.MODID) {
         @Override
         public ItemStack makeIcon() {
-            return NewOresItems.PLATINIUM_ORE_ITEM.get().getDefaultInstance();
+            return NewOresItems.PLATINUM_ORE_ITEM.get().getDefaultInstance();
         }
     };
 

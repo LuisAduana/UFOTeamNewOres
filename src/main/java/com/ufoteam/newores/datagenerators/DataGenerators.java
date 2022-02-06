@@ -2,6 +2,7 @@ package com.ufoteam.newores.datagenerators;
 
 import com.ufoteam.newores.GlobalUtils;
 import com.ufoteam.newores.datagenerators.languages.EnUs;
+import com.ufoteam.newores.datagenerators.languages.EsMx;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;
@@ -14,6 +15,7 @@ public class DataGenerators {
     public static void gatherData(GatherDataEvent event) {
         DataGenerator generator = event.getGenerator();
         if (event.includeServer()) {
+
             NewOresBlockTags blockTags = new NewOresBlockTags(generator, event.getExistingFileHelper());
             generator.addProvider(blockTags);
             generator.addProvider(new NewOresItemTags(generator, blockTags, event.getExistingFileHelper()));
@@ -22,6 +24,7 @@ public class DataGenerators {
             generator.addProvider(new NewOresBlockStates(generator, event.getExistingFileHelper()));
             generator.addProvider(new NewOresItemModels(generator, event.getExistingFileHelper()));
             generator.addProvider(new EnUs(generator));
+            generator.addProvider(new EsMx(generator));
         }
     }
 

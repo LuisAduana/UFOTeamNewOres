@@ -11,5 +11,5 @@ import net.minecraftforge.registries.RegistryObject;
 public class NewOresBlocks {
     public static final DeferredRegister<Block> BLOCKS = DeferredRegister.create(ForgeRegistries.BLOCKS, GlobalUtils.MODID);
 
-    public static final RegistryObject<Block> PLATINIUM_ORE = BLOCKS.register("platinium_ore", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(1.2f, 6f)));
+    public static final RegistryObject<Block> PLATINUM_ORE = BLOCKS.register("platinum_ore", () -> new Block(BlockBehaviour.Properties.of(Material.STONE).strength(1.2f, 6f).requiresCorrectToolForDrops()));
 }

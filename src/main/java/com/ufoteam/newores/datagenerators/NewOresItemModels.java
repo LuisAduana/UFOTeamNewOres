@@ -14,7 +14,8 @@ public class NewOresItemModels extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
-        withExistingParent(NewOresItems.PLATINIUM_ORE_ITEM.get().getRegistryName().getPath(), modLoc("block/platinium_ore"));
+        singleTexture(NewOresItems.PLATINUM_INGOT.get().getRegistryName().getPath(), mcLoc("item/generated"), "layer0", modLoc("item/platinum_ingot"));
+        withExistingParent(NewOresItems.PLATINUM_ORE_ITEM.get().getRegistryName().getPath(), modLoc("block/platinum_ore"));
     }
 
 }
