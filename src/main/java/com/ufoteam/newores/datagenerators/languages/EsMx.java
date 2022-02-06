@@ -5,16 +5,15 @@ import com.ufoteam.newores.registries.NewOresBlocks;
 import net.minecraft.data.DataGenerator;
 import net.minecraftforge.common.data.LanguageProvider;
 
-public class EnUs extends LanguageProvider {
+public class EsMx  extends LanguageProvider {
 
-    public EnUs(DataGenerator generator) {
-        super(generator, GlobalUtils.MODID, "en_us");
+    public EsMx(DataGenerator generator) {
+        super(generator, GlobalUtils.MODID, "es_mx");
     }
 
     @Override
     protected void addTranslations() {
         add("itemGroup." + GlobalUtils.MODID, "NewOres Mod");
-        add(NewOresBlocks.PLATINIUM_ORE.get(), "Platinium Ore");
+        add(NewOresBlocks.PLATINIUM_ORE.get(), "Mineral de Platino");
     }
-
 }
