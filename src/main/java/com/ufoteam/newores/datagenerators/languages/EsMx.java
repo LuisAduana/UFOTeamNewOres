@@ -17,5 +17,10 @@ public class EsMx  extends LanguageProvider {
         add("itemGroup." + GlobalUtils.MODID, "NewOres Mod");
         add(NewOresItems.PLATINUM_INGOT.get(), "Lingote de Platino");
         add(NewOresBlocks.PLATINUM_ORE.get(), "Mineral de Platino");
+        add(NewOresItems.PLATINUM_SWORD.get(), "Espada de Platino");
+        add(NewOresItems.PLATINUM_PICKAXE.get(), "Pico de Platino");
+        add(NewOresItems.PLATINUM_AXE.get(), "Hacha de Platino");
+        add(NewOresItems.PLATINUM_SHOVEL.get(), "Pala de Platino");
+        add(NewOresItems.PLATINUM_HOE.get(), "Hazada de Platino");
     }
 }
