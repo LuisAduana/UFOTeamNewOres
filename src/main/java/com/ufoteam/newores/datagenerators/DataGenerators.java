@@ -15,7 +15,7 @@ public class DataGenerators {
     public static void gatherData(GatherDataEvent event) {
         DataGenerator generator = event.getGenerator();
         if (event.includeServer()) {
-
+            generator.addProvider(new NewOresLootTables(generator));
             NewOresBlockTags blockTags = new NewOresBlockTags(generator, event.getExistingFileHelper());
             generator.addProvider(blockTags);
             generator.addProvider(new NewOresItemTags(generator, blockTags, event.getExistingFileHelper()));
