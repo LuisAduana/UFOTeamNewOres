@@ -18,6 +18,8 @@ public class NewOresItems {
             () -> new Item(new Item.Properties().tab(GlobalUtils.NEWORES_TAB)));
     public static final RegistryObject<Item> PLATINUM_ORE_ITEM = ITEMS.register(NewOresNames.platinum_ore.toString(),
             () -> new BlockItem(NewOresBlocks.PLATINUM_ORE.get(), new Item.Properties().tab(GlobalUtils.NEWORES_TAB)));
+    public static final RegistryObject<Item> PLATINUM_NUGGET = ITEMS.register(NewOresNames.platinum_nugget.toString(),
+            () -> new Item(new Item.Properties().tab(GlobalUtils.NEWORES_TAB)));
 
     public static final RegistryObject<Item> PLATINUM_SWORD = ITEMS.register(NewOresNames.platinum_sword.toString(),
             () -> new SwordItem(NewOresTiers.PLATINUM_TIER, 7, 0, new Item.Properties().tab(GlobalUtils.NEWORES_TAB)));

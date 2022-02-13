@@ -21,8 +21,4 @@ public class NewOresItemTags extends ItemTagsProvider {
 
     }
 
-    @Override
-    public String getName() {
-        return "NewOres Tags";
-    }
 }

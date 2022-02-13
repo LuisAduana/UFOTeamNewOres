@@ -12,6 +12,10 @@ import net.minecraftforge.registries.RegistryObject;
 public class NewOresItemModels extends ItemModelProvider {
 
     private static final String LAYER0 = "layer0";
+    private static final String BLOCK = "block/";
+    private static final String ITEM = "item/";
+    private static final String GENERATED = "item/generated";
+    private static final String HANDHELD = "item/handheld";
 
     public NewOresItemModels(DataGenerator generator, ExistingFileHelper existingFileHelper) {
         super(generator, GlobalUtils.MODID, existingFileHelper);
@@ -22,6 +26,7 @@ public class NewOresItemModels extends ItemModelProvider {
         singleTexture(getItemPath(NewOresItems.LOGO), getGenerated(), LAYER0, getItemLocation(NewOresItems.LOGO));
 
         singleTexture(getItemPath(NewOresItems.PLATINUM_INGOT), getGenerated(), LAYER0, getItemLocation(NewOresItems.PLATINUM_INGOT));
+        singleTexture(getItemPath(NewOresItems.PLATINUM_NUGGET), getGenerated(), LAYER0, getItemLocation(NewOresItems.PLATINUM_NUGGET));
         singleTexture(getItemPath(NewOresItems.PLATINUM_SWORD), getHandheld(), LAYER0, getItemLocation(NewOresItems.PLATINUM_SWORD));
         singleTexture(getItemPath(NewOresItems.PLATINUM_PICKAXE), getHandheld(), LAYER0, getItemLocation(NewOresItems.PLATINUM_PICKAXE));
         singleTexture(getItemPath(NewOresItems.PLATINUM_AXE), getHandheld(), LAYER0, getItemLocation(NewOresItems.PLATINUM_AXE));
@@ -32,11 +37,11 @@ public class NewOresItemModels extends ItemModelProvider {
     }
 
     private ResourceLocation getItemLocation(RegistryObject<Item> item) {
-        return modLoc("item/" + getItemPath(item));
+        return modLoc(ITEM + getItemPath(item));
     }
 
     private ResourceLocation getBlockLocation(RegistryObject<Item> item) {
-        return modLoc("block/" + getItemPath(item));
+        return modLoc(BLOCK + getItemPath(item));
     }
 
     private String getItemPath(RegistryObject<Item> item) {
@@ -44,11 +49,11 @@ public class NewOresItemModels extends ItemModelProvider {
     }
 
     private ResourceLocation getGenerated() {
-        return mcLoc("item/generated");
+        return mcLoc(GENERATED);
     }
 
     private ResourceLocation getHandheld() {
-        return mcLoc("item/handheld");
+        return mcLoc(HANDHELD);
     }
 
 }

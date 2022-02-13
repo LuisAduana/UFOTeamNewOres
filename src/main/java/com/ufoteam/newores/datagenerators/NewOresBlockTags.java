@@ -24,8 +24,4 @@ public class NewOresBlockTags extends BlockTagsProvider {
                 .add(NewOresBlocks.PLATINUM_ORE.get());
     }
 
-    @Override
-    public String getName() {
-        return "NewOres Tags";
-    }
 }

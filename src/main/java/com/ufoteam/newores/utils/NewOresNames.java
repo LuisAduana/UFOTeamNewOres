@@ -2,6 +2,7 @@ package com.ufoteam.newores.utils;
 
 public enum NewOresNames {
     platinum_ore,
+    platinum_nugget,
     platinum_ingot,
     platinum_sword,
     platinum_pickaxe,
