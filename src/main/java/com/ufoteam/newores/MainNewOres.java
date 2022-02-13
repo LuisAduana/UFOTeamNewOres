@@ -2,6 +2,7 @@ package com.ufoteam.newores;
 
 import com.ufoteam.newores.registries.NewOresBlocks;
 import com.ufoteam.newores.registries.NewOresItems;
+import com.ufoteam.newores.utils.GlobalUtils;
 import net.minecraftforge.common.MinecraftForge;
 import net.minecraftforge.eventbus.api.IEventBus;
 import net.minecraftforge.fml.common.Mod;

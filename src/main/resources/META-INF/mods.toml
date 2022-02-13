@@ -27,12 +27,12 @@ displayName="New Ores" #mandatory
 # A URL for the "homepage" for this mod, displayed in the mod UI
 #displayURL="https://change.me.to.your.mods.homepage.example.invalid/" #optional
 # A file name (in the root of the mod JAR) containing a logo for display
-logoFile="newores_logo.png" #optional
+logoFile="ufoteam_icon.png" #optional
 # A text field displayed in the mod UI
-credits="Thanks to the UFO Team: DonCarlos, Gittel, Francis, Aduana, Se7eN" #optional
+credits="Thanks to the UFO Team: DonCarlos, Gittel, Aduana, Se7eN, Diana" #optional
 # A text field displayed in the mod UI
 authors="UFO Team" #optional
 # The description text for the mod (multi line!) (#mandatory)
 description='''
-This mod add a fantastic new ores which will make your game more interesting.
+This mod adds a fantastic new ores which will make your game more interesting.
 '''

@@ -1,6 +1,6 @@
 package com.ufoteam.newores.datagenerators;
 
-import com.ufoteam.newores.GlobalUtils;
+import com.ufoteam.newores.utils.GlobalUtils;
 import com.ufoteam.newores.registries.NewOresItems;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.tags.BlockTagsProvider;

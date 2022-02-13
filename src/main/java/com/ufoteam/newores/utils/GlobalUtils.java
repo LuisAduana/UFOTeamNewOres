@@ -1,4 +1,4 @@
-package com.ufoteam.newores;
+package com.ufoteam.newores.utils;
 
 import com.ufoteam.newores.registries.NewOresItems;
 import net.minecraft.resources.ResourceLocation;
@@ -10,7 +10,7 @@ public class GlobalUtils {
     public static final CreativeModeTab NEWORES_TAB = new CreativeModeTab(GlobalUtils.MODID) {
         @Override
         public ItemStack makeIcon() {
-            return NewOresItems.PLATINUM_ORE_ITEM.get().getDefaultInstance();
+            return new ItemStack(NewOresItems.LOGO.get());
         }
     };
 

@@ -1,6 +1,6 @@
 package com.ufoteam.newores.oregeneration;
 
-import com.ufoteam.newores.GlobalUtils;
+import com.ufoteam.newores.utils.GlobalUtils;
 import net.minecraft.world.level.levelgen.GenerationStep;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;

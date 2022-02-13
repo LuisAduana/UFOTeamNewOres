@@ -1,6 +1,6 @@
 package com.ufoteam.newores.datagenerators.languages;
 
-import com.ufoteam.newores.GlobalUtils;
+import com.ufoteam.newores.utils.GlobalUtils;
 import com.ufoteam.newores.registries.NewOresBlocks;
 import com.ufoteam.newores.registries.NewOresItems;
 import net.minecraft.data.DataGenerator;

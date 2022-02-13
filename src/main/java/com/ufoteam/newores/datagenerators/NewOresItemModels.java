@@ -1,10 +1,9 @@
 package com.ufoteam.newores.datagenerators;
 
-import com.ufoteam.newores.GlobalUtils;
+import com.ufoteam.newores.utils.GlobalUtils;
 import com.ufoteam.newores.registries.NewOresItems;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.resources.ResourceLocation;
-import net.minecraft.server.packs.resources.Resource;
 import net.minecraft.world.item.Item;
 import net.minecraftforge.client.model.generators.ItemModelProvider;
 import net.minecraftforge.common.data.ExistingFileHelper;
@@ -20,6 +19,8 @@ public class NewOresItemModels extends ItemModelProvider {
 
     @Override
     protected void registerModels() {
+        singleTexture(getItemPath(NewOresItems.LOGO), getGenerated(), LAYER0, getItemLocation(NewOresItems.LOGO));
+
         singleTexture(getItemPath(NewOresItems.PLATINUM_INGOT), getGenerated(), LAYER0, getItemLocation(NewOresItems.PLATINUM_INGOT));
         singleTexture(getItemPath(NewOresItems.PLATINUM_SWORD), getHandheld(), LAYER0, getItemLocation(NewOresItems.PLATINUM_SWORD));
         singleTexture(getItemPath(NewOresItems.PLATINUM_PICKAXE), getHandheld(), LAYER0, getItemLocation(NewOresItems.PLATINUM_PICKAXE));
