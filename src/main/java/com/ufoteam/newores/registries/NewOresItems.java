@@ -22,15 +22,15 @@ public class NewOresItems {
             () -> new Item(new Item.Properties().tab(GlobalUtils.NEWORES_TAB)));
 
     public static final RegistryObject<Item> PLATINUM_SWORD = ITEMS.register(NewOresNames.platinum_sword.toString(),
-            () -> new SwordItem(NewOresTiers.PLATINUM_TIER, 7, 0, new Item.Properties().tab(GlobalUtils.NEWORES_TAB)));
+            () -> new SwordItem(NewOresTiers.PLATINUM_SWORD, 3, -2.4F, new Item.Properties().tab(GlobalUtils.NEWORES_TAB)));
     public static final RegistryObject<Item> PLATINUM_PICKAXE = ITEMS.register(NewOresNames.platinum_pickaxe.toString(),
-            () -> new PickaxeItem(NewOresTiers.PLATINUM_TIER, 1, 0, new Item.Properties().tab(GlobalUtils.NEWORES_TAB)));
+            () -> new PickaxeItem(NewOresTiers.PLATINUM_TOOL, 1, -2.8F, new Item.Properties().tab(GlobalUtils.NEWORES_TAB)));
     public static final RegistryObject<Item> PLATINUM_AXE = ITEMS.register(NewOresNames.platinum_axe.toString(),
-            () -> new AxeItem(NewOresTiers.PLATINUM_TIER, 5.5f, 0, new Item.Properties().tab(GlobalUtils.NEWORES_TAB)));
+            () -> new AxeItem(NewOresTiers.PLATINUM_TOOL, 6, -3.1F, new Item.Properties().tab(GlobalUtils.NEWORES_TAB)));
     public static final RegistryObject<Item> PLATINUM_SHOVEL = ITEMS.register(NewOresNames.platinum_shovel.toString(),
-            () -> new ShovelItem(NewOresTiers.PLATINUM_TIER, 1, 0, new Item.Properties().tab(GlobalUtils.NEWORES_TAB)));
+            () -> new ShovelItem(NewOresTiers.PLATINUM_GENERIC, 1, -3.0F, new Item.Properties().tab(GlobalUtils.NEWORES_TAB)));
     public static final RegistryObject<Item> PLATINUM_HOE = ITEMS.register(NewOresNames.platinum_hoe.toString(),
-            () -> new HoeItem(NewOresTiers.PLATINUM_TIER, 1, 0, new Item.Properties().tab(GlobalUtils.NEWORES_TAB)));
+            () -> new HoeItem(NewOresTiers.PLATINUM_GENERIC, -3, 0, new Item.Properties().tab(GlobalUtils.NEWORES_TAB)));
 
     public static void register(IEventBus eventBus) {
         ITEMS.register(eventBus);
