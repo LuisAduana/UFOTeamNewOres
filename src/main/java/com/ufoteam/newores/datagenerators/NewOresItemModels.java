@@ -25,6 +25,7 @@ public class NewOresItemModels extends ItemModelProvider {
     protected void registerModels() {
         singleTexture(getItemPath(NewOresItems.LOGO), getGenerated(), LAYER0, getItemLocation(NewOresItems.LOGO));
 
+        withExistingParent(getItemPath(NewOresItems.PLATINUM_ORE_ITEM), getBlockLocation(NewOresItems.PLATINUM_ORE_ITEM));
         singleTexture(getItemPath(NewOresItems.PLATINUM_INGOT), getGenerated(), LAYER0, getItemLocation(NewOresItems.PLATINUM_INGOT));
         singleTexture(getItemPath(NewOresItems.PLATINUM_NUGGET), getGenerated(), LAYER0, getItemLocation(NewOresItems.PLATINUM_NUGGET));
         singleTexture(getItemPath(NewOresItems.PLATINUM_SWORD), getHandheld(), LAYER0, getItemLocation(NewOresItems.PLATINUM_SWORD));
@@ -33,7 +34,8 @@ public class NewOresItemModels extends ItemModelProvider {
         singleTexture(getItemPath(NewOresItems.PLATINUM_SHOVEL), getHandheld(), LAYER0, getItemLocation(NewOresItems.PLATINUM_SHOVEL));
         singleTexture(getItemPath(NewOresItems.PLATINUM_HOE), getHandheld(), LAYER0, getItemLocation(NewOresItems.PLATINUM_HOE));
 
-        withExistingParent(getItemPath(NewOresItems.PLATINUM_ORE_ITEM), getBlockLocation(NewOresItems.PLATINUM_ORE_ITEM));
+        withExistingParent(getItemPath(NewOresItems.MYTHRIL_ORE_ITEM), getBlockLocation(NewOresItems.MYTHRIL_ORE_ITEM));
+        singleTexture(getItemPath(NewOresItems.MYTHRIL_INGOT), getGenerated(), LAYER0, getItemLocation(NewOresItems.MYTHRIL_INGOT));
     }
 
     private ResourceLocation getItemLocation(RegistryObject<Item> item) {

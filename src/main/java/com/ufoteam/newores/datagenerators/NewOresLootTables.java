@@ -13,5 +13,6 @@ public class NewOresLootTables extends BaseLootTableProvider {
     @Override
     protected void addTables() {
         lootTables.put(NewOresBlocks.PLATINUM_ORE.get(), createSimpleLootBlock(NewOresBlocks.PLATINUM_ORE.get(), NewOresItems.PLATINUM_ORE_ITEM.get()));
+        lootTables.put(NewOresBlocks.MYTHRIL_ORE.get(), createSimpleLootBlock(NewOresBlocks.MYTHRIL_ORE.get(), NewOresItems.MYTHRIL_ORE_ITEM.get()));
     }
 }

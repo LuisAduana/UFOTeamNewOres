@@ -23,5 +23,8 @@ public class EsMx  extends LanguageProvider {
         add(NewOresItems.PLATINUM_AXE.get(), "Hacha de Platino");
         add(NewOresItems.PLATINUM_SHOVEL.get(), "Pala de Platino");
         add(NewOresItems.PLATINUM_HOE.get(), "Hazada de Platino");
+
+        add(NewOresItems.MYTHRIL_ORE_ITEM.get(), "Mineral de Mythril");
+        add(NewOresItems.MYTHRIL_INGOT.get(), "Lingote de Mythril");
     }
 }

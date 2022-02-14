@@ -15,6 +15,7 @@ public class NewOresBlockStates extends BlockStateProvider {
     @Override
     protected void registerStatesAndModels() {
         simpleBlock(NewOresBlocks.PLATINUM_ORE.get());
+        simpleBlock(NewOresBlocks.MYTHRIL_ORE.get());
     }
 
 }

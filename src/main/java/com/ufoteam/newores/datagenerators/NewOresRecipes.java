@@ -6,9 +6,7 @@ import net.minecraft.data.DataGenerator;
 import net.minecraft.data.recipes.*;
 import net.minecraft.world.item.Items;
 import net.minecraft.world.item.crafting.Ingredient;
-import net.minecraft.world.item.crafting.ShapedRecipe;
-import net.minecraft.world.item.crafting.ShapelessRecipe;
-import net.minecraftforge.common.Tags;
+import org.jetbrains.annotations.NotNull;
 
 import java.util.function.Consumer;
 
@@ -21,7 +19,7 @@ public class NewOresRecipes extends RecipeProvider {
     }
 
     @Override
-    protected void buildCraftingRecipes(Consumer<FinishedRecipe> pFinishedRecipeConsumer) {
+    protected void buildCraftingRecipes(@NotNull Consumer<FinishedRecipe> pFinishedRecipeConsumer) {
 
         ShapedRecipeBuilder.shaped(NewOresItems.PLATINUM_SWORD.get())
                 .pattern(" X ")
@@ -39,6 +37,7 @@ public class NewOresRecipes extends RecipeProvider {
                 .define('X', NewOresItems.PLATINUM_INGOT.get())
                 .define('#', Items.STICK)
                 .unlockedBy(HAS_PLATINUM_INGOT, InventoryChangeTrigger.TriggerInstance.hasItems(NewOresItems.PLATINUM_INGOT.get()))
+                .group("tools")
                 .save(pFinishedRecipeConsumer);
 
         ShapedRecipeBuilder.shaped(NewOresItems.PLATINUM_AXE.get())
@@ -82,9 +81,19 @@ public class NewOresRecipes extends RecipeProvider {
                 .save(pFinishedRecipeConsumer);
 
         SimpleCookingRecipeBuilder.smelting(Ingredient.of(NewOresItems.PLATINUM_ORE_ITEM.get()),
-                NewOresItems.PLATINUM_INGOT.get(), 1.0f, 100)
+                NewOresItems.PLATINUM_INGOT.get(), 0.4F, 100)
                 .unlockedBy("has_ore", has(NewOresItems.PLATINUM_ORE_ITEM.get()))
-                .save(pFinishedRecipeConsumer, "platinum_ingot_from_platinum_ore");
+                .save(pFinishedRecipeConsumer, "platinum_ingot_from_smelting_platinum_ore");
+
+        SimpleCookingRecipeBuilder.smelting(Ingredient.of(NewOresItems.MYTHRIL_ORE_ITEM.get()),
+                NewOresItems.MYTHRIL_INGOT.get(), 0.8F, 3800)
+                .unlockedBy("has_ore", has(NewOresItems.MYTHRIL_ORE_ITEM.get()))
+                .save(pFinishedRecipeConsumer, "mythril_ingot_from_smelting_mythril_ore");
+
+        SimpleCookingRecipeBuilder.blasting(Ingredient.of(NewOresItems.MYTHRIL_ORE_ITEM.get()),
+                NewOresItems.MYTHRIL_INGOT.get(), 1.0F, 3000)
+                .unlockedBy("has_ore", has(NewOresItems.MYTHRIL_ORE_ITEM.get()))
+                .save(pFinishedRecipeConsumer, "mythril_ingot_from_blasting_mythril_ore");
     }
 
 

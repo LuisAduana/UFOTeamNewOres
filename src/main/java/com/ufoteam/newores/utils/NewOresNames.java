@@ -8,5 +8,8 @@ public enum NewOresNames {
     platinum_pickaxe,
     platinum_axe,
     platinum_shovel,
-    platinum_hoe
+    platinum_hoe,
+
+    mythril_ore,
+    mythril_ingot,
 }
